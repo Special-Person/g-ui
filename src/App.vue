@@ -25,29 +25,25 @@
       <g-button round type="danger">好</g-button>
     </div>
     <div>
-      <g-button circle>
-        <i class="g-icon-eleme"></i>
-      </g-button>
-      <g-button circle type="primary">
-        <i class="g-icon-edit"></i>
-      </g-button>
-      <g-button circle type="success">
-        <i class="g-icon-check"></i>
-      </g-button>
-      <g-button circle type="info">
-        <i class="g-icon-message"></i>
-      </g-button>
-      <g-button circle type="warning">
-        <i class="g-icon-star-off"></i>
-      </g-button>
-      <g-button circle type="danger">
-        <i class="g-icon-delete"></i>
-      </g-button>
+      <g-button icon="g-icon-eleme" @click="handleClick">真不错</g-button>
+      <g-button icon="g-icon-edit"></g-button>
+      <g-button icon="g-icon-check">真不错</g-button>
+      <g-button icon="g-icon-message">真不错</g-button>
+      <g-button icon="g-icon-star-off">真不错</g-button>
+      <g-button icon="g-icon-delete">真不错</g-button>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    methods: {
+      handleClick(val){
+        console.log("点击了")
+      }
+    }
+  }
+</script>
 
 <style lang="scss">
 #app > div > .g-button {
