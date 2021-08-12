@@ -1,0 +1,28 @@
+.toggleDialog-enter-active {
+  animation: toggleDialog 0.1s;
+}
+.toggleDialog-leave-active {
+  animation: toggleDialog 0.1s reverse;
+}
+
+@keyframes toggleDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.translateDialog {
+  animation: translateDialog 0.2s;
+}
+
+@keyframes translateDialog {
+  0% {
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    transform: translateY(-50%, 0px);
+  }
+}

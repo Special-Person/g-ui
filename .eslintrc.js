@@ -1,5 +1,4 @@
 module.exports = {
-  parser: 'vue-eslint-parser',
   rules: {
     "indent": [0, 2],
     'semi': 0
@@ -11,4 +10,5 @@ module.exports = {
       "modules": true
     }
   },
+  parser: "vue-eslint-parser",
 };
